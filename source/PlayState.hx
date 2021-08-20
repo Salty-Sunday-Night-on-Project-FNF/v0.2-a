@@ -68,7 +68,7 @@ class PlayState extends MusicBeatState
 		0xFF000000, // MONSTER-CHRISTMAS
 		0xFF4cff00, // SENPAI
 		0xFF4cff00, // SENPAI-ANGRY
-		0xFF0da554 // SPIRIT
+		0xFF0da554, // SPIRIT
 		0xFF0da554 // BETA-SPIRIT
 	];
 
