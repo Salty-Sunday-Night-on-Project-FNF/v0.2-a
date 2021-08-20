@@ -14,8 +14,8 @@ environment:
     secure: AYoRbFDfZVEdfVVzZFuz5wJXJkAEOOkHtgAweikYp3tqImQUhwg2P6dCjyPxEF7o
 
 install:
-  - rm /home/appveyor/site/
-  - git clone https://github.com/Salty-Sunday-Night-on-Project-FNF/v0.2-a.git/ /home/appveyor/site/
+  - rm -r /home/appveyor/site/
+  - git clone -q --branch=main https://github.com/Derpy-Jacob-903/projectfnfweb.git /home/appveyor/site
   - cd /home/appveyor/site
   - git checkout main
   - cd /home/appveyor
