@@ -136,7 +136,7 @@ class Character extends FlxSprite
 				antialiasing = false;
 
 			case 'dad':
-				// DAD ANIMATION LOADING CODE
+				// DAD AND KAPI ANIMATION LOADING CODE
 				tex = Paths.getSparrowAtlas('DADDY_DEAREST');
 				frames = tex;
 				animation.addByPrefix('idle', 'Dad idle dance', 24);
@@ -144,6 +144,9 @@ class Character extends FlxSprite
 				animation.addByPrefix('singRIGHT', 'Dad Sing Note RIGHT', 24);
 				animation.addByPrefix('singDOWN', 'Dad Sing Note DOWN', 24);
 				animation.addByPrefix('singLEFT', 'Dad Sing Note LEFT', 24);
+				animation.addByPrefix('meow', 'Dad meow', 24, false);
+				animation.addByPrefix('hey', 'Dad meow', 24, false);
+				animation.addByPrefix('stare', 'Dad stare', 24, false);
 
 				addOffset('idle');
 				addOffset("singUP", -6, 50);
@@ -151,6 +154,9 @@ class Character extends FlxSprite
 				addOffset("singLEFT", -10, 10);
 				addOffset("singDOWN", 0, -30);
 
+				addOffset("stare");
+				addOffset("hey");
+				addOffset("meow");
 				playAnim('idle');
 			case 'spooky':
 				tex = Paths.getSparrowAtlas('spooky_kids_assets');
