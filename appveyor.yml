@@ -62,10 +62,10 @@ build_script:
   - git rm -rf SSN/v02-a/
   - cp -r /home/appveyor/src/export/release/html5/bin /home/appveyor/site/bin
   - cd 
-  - mkdir /appveyor/site/SSN/v02-a
-  - mv /home/appveyor/site/bin /home/appveyor/site/SSN/v02-a
+  # mkdir /appveyor/site/SSN/v02-a
+  # mv /home/appveyor/site/bin /home/appveyor/site/SSN/v02-a
   - cd /home/appveyor/src/
-  - mv LICENSE /home/appveyor/site/SSN/v02-a/
+  # mv LICENSE /home/appveyor/site/SSN/v02-a/
   - cd /home/appveyor/site
   - git add --all
   - git commit -m "SSN build through appveyor"
