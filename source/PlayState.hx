@@ -63,12 +63,13 @@ class PlayState extends MusicBeatState
 		0xFFff98ff, // SPOOKY
 		0xFFff98ff, // BETA-SPOOKY
 		0xFF3366ff, // PICO
+		0xFF3366ff, // BETA-PICO
 		0xFF000000, // MONSTER
 		0xFF000000, // MONSTER-CHRISTMAS
 		0xFF4cff00, // SENPAI
 		0xFF4cff00, // SENPAI-ANGRY
 		0xFF0da554 // SPIRIT
-		0xFF0da554 // SPIRIT-SUS
+		0xFF0da554 // BETA-SPIRIT
 	];
 
 	/* 
