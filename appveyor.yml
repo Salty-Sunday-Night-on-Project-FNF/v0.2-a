@@ -61,7 +61,6 @@ build_script:
   - cd /home/appveyor/site
   - git rm -rf SSN/v02-a/
   - cp -r /home/appveyor/src/export/release/html5/bin /home/appveyor/site/bin
-  - mkdir 
   - mv /home/appveyor/site/bin /home/appveyor/site/SSN/v02-a
   - cd /home/appveyor/src/
   - mv LICENSE /home/appveyor/site/SSN/v02-a/
