@@ -7,7 +7,7 @@ skip_tags: true
 environment:
   HAXELIB_ROOT: C:\projects\haxelib
   HAXE_INSTALLDIR: C:\projects\haxe
-  SRC_REPO: https://github.com/aflacc/ProjectFNF.git
+  SRC_REPO: https://github.com/Salty-Sunday-Night-on-Project-FNF/v0.2-a.git
   GITHUB_ACCESS_TOKEN:
     secure: AYoRbFDfZVEdfVVzZFuz5wJXJkAEOOkHtgAweikYp3tqImQUhwg2P6dCjyPxEF7o
 
