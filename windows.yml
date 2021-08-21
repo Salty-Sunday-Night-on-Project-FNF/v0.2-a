@@ -56,6 +56,6 @@ build_script:
   - haxelib run lime build windows
   
 artifacts:
-  - path: /export/release/windows/bin
+  - path: C:/projects/export/release/windows/bin
     name: projectFNF-Windows
     type: zip
