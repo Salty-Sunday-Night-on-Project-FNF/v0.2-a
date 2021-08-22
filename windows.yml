@@ -44,7 +44,7 @@ install:
 build_script:
   - cd C:\projects\sussy\src\source
   - mkdir C:\projects\sussy\src\source\ugh\
-  - git clone https://github.com/Derpy-Jacob-903/APIStuff.git C:\projects\src\source\ugh\
+  - git clone https://github.com/Derpy-Jacob-903/APIStuff.git C:\projects\sussy\src\source\ugh\
   - cd C:\projects\sussy\src\source\ugh\
   - cp APIStuff.hx C:\projects\sussy\src\source\
   - ls C:\projects\sussy\src\source\ugh\
