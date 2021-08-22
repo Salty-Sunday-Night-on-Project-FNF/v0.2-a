@@ -54,8 +54,24 @@ build_script:
   - git config --global user.name "Derpy-Jacob-903"
   - cd C:\projects\sussy\src\
   - haxelib run lime build windows
+  - cd C:\projects\
   
 artifacts:
   - path: /export/release/windows/bin
     name: windows-build
+    type: zip
+  - path: /sussy/export/release/windows/bin
+    name: windows-build2
+    type: zip
+  - path: /release/windows/bin
+    name: windows-build3
+    type: zip
+  - path: export/release/windows/bin
+    name: windows-build4
+    type: zip
+  - path: sussy/export/release/windows/bin
+    name: windows-build5
+    type: zip
+  - path: release/windows/bin
+    name: windows-build6
     type: zip
