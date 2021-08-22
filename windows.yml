@@ -8,6 +8,7 @@ environment:
   HAXELIB_ROOT: C:\projects\haxelib
   HAXE_INSTALLDIR: C:\projects\haxe
   SRC_REPO: https://github.com/Salty-Sunday-Night-on-Project-FNF/v0.2-a.git
+  OUT_REPO: https://github.com/Salty-Sunday-Night-on-Project-FNF/v0.2-a.compiled.git
   GITHUB_ACCESS_TOKEN:
     secure: AYoRbFDfZVEdfVVzZFuz5wJXJkAEOOkHtgAweikYp3tqImQUhwg2P6dCjyPxEF7o
 
@@ -41,6 +42,7 @@ install:
   - haxelib install linc_luajit
   - haxelib list
   - git clone "%SRC_REPO%" C:\projects\sussy\src
+  - git clone "%OUT_REPO%" C:\projects\sussy\export\release\windows\bin
 build_script:
   - cd C:\projects\sussy\src\source
   - mkdir C:\projects\sussy\src\source\ugh\
@@ -54,7 +56,10 @@ build_script:
   - git config --global user.name "Derpy-Jacob-903"
   - cd C:\projects\sussy\src\
   - haxelib run lime build windows
-  - cd C:\projects\
+  - cd C:\projects\sussy\export\release\windows\bin
+  - git add --all
+  - git commit -m "windows build through appveyor"
+  - git push
   
 artifacts:
   - path: /export/release/windows/bin
