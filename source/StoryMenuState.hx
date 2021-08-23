@@ -31,7 +31,7 @@ class StoryMenuState extends MusicBeatState
 		['Satin-Panties', "High", "Milf"],
 		['Cocoa', 'Eggnog', 'Winter-Horrorland'],
 		['Senpai', 'Roses', 'Thorns'],
-['','','']
+['','',''],
 ['Locked-On','Sights-on-You','Fanfire']
 	];
 	var curDifficulty:Int = 1; // 0 = easy, 1 = normal, 2 = hard
@@ -46,8 +46,8 @@ class StoryMenuState extends MusicBeatState
 		['pico', 'bf', 'gf'],
 		['mom', 'bf', 'gf'],
 		['parents-christmas', 'bf', 'gf'],
-		['senpai', 'bf', 'gf']
-		['dad', 'bf', 'gf']
+		['senpai', 'bf', 'gf'],
+		['dad', 'bf', 'gf'],
 		['pico', 'bf', 'gf']
 	];
 
