@@ -36,7 +36,7 @@ class StoryMenuState extends MusicBeatState
 	];
 	var curDifficulty:Int = 1; // 0 = easy, 1 = normal, 2 = hard
 
-	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true]; // If the weeks are unlocked
+	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true, false, true]; // If the weeks are unlocked
 
 	var weekCharacters:Array<Dynamic> = [
 		// Characters that are displayed in the story mode menu
