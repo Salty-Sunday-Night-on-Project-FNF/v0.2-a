@@ -1,7 +1,7 @@
 version: 'PFNF v0.2-a / SSN 1.5 / indev{build}'
 branches:
   only:
-  - main
+  - inujomp,
 skip_tags: true
 image: Ubuntu2004
 clone_folder: /home/appveyor/site
@@ -59,7 +59,7 @@ build_script:
   - cd /home/appveyor/src
   - haxelib run lime build html5
   - cd /home/appveyor/site
-  - git rm -rf SSN/v02-a/
+  - git rm -rf bin/
   - cp -r /home/appveyor/src/export/release/html5/bin /home/appveyor/site/bin
   - cd 
   # mkdir /appveyor/site/SSN/v02-a
