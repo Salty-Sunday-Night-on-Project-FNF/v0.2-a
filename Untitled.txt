@@ -1,0 +1,2 @@
+<!-- <assets path="assets/week7"    library="week7"    exclude="*.ogg" if="web"/> -->
+	<!-- <assets path="assets/week7"    library="week7"    exclude="*.mp3" exclude="images/chara/*" unless="web"/> -->
