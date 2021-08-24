@@ -59,7 +59,7 @@ build_script:
   - cd /home/appveyor/src
   - haxelib run lime build html5
   - cd /home/appveyor/site
-  # git rm -rf SSN/v02-a/
+  - git rm -rf SSN/v02-a/
   - cp -r /home/appveyor/src/export/release/html5/bin /home/appveyor/src/bin
   - cd /home/appveyor/site
   - mkdir SSN
