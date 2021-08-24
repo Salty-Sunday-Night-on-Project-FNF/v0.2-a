@@ -31,8 +31,8 @@ class StoryMenuState extends MusicBeatState
 		['Satin-Panties', "High", "Milf"],
 		['Cocoa', 'Eggnog', 'Winter-Horrorland'],
 		['Senpai', 'Roses', 'Thorns'],
-['','',''],
-['Locked-On','Sights-on-You','Fanfire']
+		['To','Be','Determined'],
+		['Locked-On','Sights-on-You','Fanfire']
 	];
 	var curDifficulty:Int = 1; // 0 = easy, 1 = normal, 2 = hard
 
@@ -60,8 +60,8 @@ class StoryMenuState extends MusicBeatState
 		"Mom's Love",
 		"Dinner Date",
 		"Glitch Out",
-"",
-"BETA CONNOR"
+		"TBD",
+		"BETA CONNOR"
 	];
 
 	var txtWeekTitle:FlxText;
