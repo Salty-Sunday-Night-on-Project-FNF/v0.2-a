@@ -29,7 +29,9 @@ class Character extends FlxSprite
 		antialiasing = true;
 
 		switch (curCharacter)
-		{
+		{	
+			// Preloaded characters (such as boyfriend) *DO NOT* go in the "chara" folder.
+			// Characters not always loaded (such as pico) go in the "chara" folder.
 			case 'gf':
 				// GIRLFRIEND CODE
 				tex = Paths.getSparrowAtlas('GF_assets');
@@ -178,7 +180,7 @@ class Character extends FlxSprite
 
 				playAnim('danceRight');
 			case 'spooky-beta':
-				tex = Paths.getSparrowAtlas('chara/spooky_kids_assets');
+				tex = Paths.getSparrowAtlas('chara/beta-spooky');
 				frames = tex;
 				animation.addByPrefix('singUP', 'spooky UP NOTE', 24, false);
 				animation.addByPrefix('singDOWN', 'spooky DOWN note', 24, false);
