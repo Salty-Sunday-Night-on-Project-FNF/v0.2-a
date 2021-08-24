@@ -59,7 +59,6 @@
 		<library name="week6"    preload="true" />
 		<library name="week8"    preload="true" />
 	</section>
-	<!-- <library name="week7"    preload="true" /> -->
 	
 	<section if="NO_PRELOAD_ALL">
 		<library name="songs"    preload="false" />
@@ -73,7 +72,6 @@
 		<library name="week6"    preload="false" />
 		<library name="week8"    preload="false" />
 	</section>
-	<!-- <library name="week7"    preload="false" /> -->
 	
 	<assets path="assets/songs"    library="songs"    exclude="*.ogg" if="web"/>
 	<assets path="assets/songs"    library="songs"    exclude="*.mp3" unless="web"/>
