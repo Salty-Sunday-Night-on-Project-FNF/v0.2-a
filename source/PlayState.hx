@@ -270,11 +270,17 @@ class PlayState extends MusicBeatState
 		{
 			case 'bf':
 				iconRPC = 'bf';
+			case 'beta-bf':
+				iconRPC = 'bf';
 			case 'gf':
 				iconRPC = 'gf';
 			case 'spooky':
 				iconRPC = 'spooky';
+			case 'beta-spooky':
+				iconRPC = 'spooky';
 			case 'pico':
+				iconRPC = 'pico';
+			case 'beta-pico':
 				iconRPC = 'pico';
 			case 'senpai':
 				iconRPC = 'senpai';
@@ -288,11 +294,15 @@ class PlayState extends MusicBeatState
 				iconRPC = 'mom';
 			case 'mom':
 				iconRPC = 'mom';
+			case 'beta-mom':
+				iconRPC = 'mom';
 			case 'dad':
 				iconRPC = 'dad';
 			case 'parents-christmas':
 				iconRPC = 'mom_and_dad';
 			case 'spirit':
+				iconRPC = 'spirit';
+			case 'beta-spirit':
 				iconRPC = 'spirit';
 		}
 
@@ -714,6 +724,9 @@ class PlayState extends MusicBeatState
 			case 'pico':
 				camPos.x += 600;
 				dad.y += 300;
+			case 'beta-pico':
+				camPos.x += 600;
+				dad.y += 300;
 			case 'parents-christmas':
 				dad.x -= 500;
 			case 'senpai':
@@ -728,6 +741,22 @@ class PlayState extends MusicBeatState
 				dad.x -= 150;
 				dad.y += 100;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
+			case 'spirit':
+				dad.x -= 150;
+				dad.y += 100;
+				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
+			case 'bf':
+				camPos.x += 600;
+				dad.y += 300;
+			case 'bf-christmas':
+				camPos.x += 600;
+				dad.y += 300;
+			case 'bf-car':
+				camPos.x += 600;
+				dad.y += 300;
+			case 'bf-pixel':
+				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
+				dad.y += 300;
 		}
 
 		boyfriend = new Boyfriend(770, 450, SONG.player1);
