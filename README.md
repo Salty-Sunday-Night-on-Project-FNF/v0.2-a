@@ -7,17 +7,17 @@
 
 # About
 ProjectFNF is a engine for Friday Night Funkin' designed to be flexable. It contains a few quality of life enhancements along with a whole [wiki](https://github.com/aflacc/ProjectFNF/wiki) which can help the user make their own mod.
-Interested in trying the beta? Click [here](https://github.com/aflacc/ProjectFNF/blob/master/beta.md)
+~~Interested in trying the beta? Click [here](https://github.com/aflacc/ProjectFNF/blob/master/beta.md)~~
 ***
 
 ## Changelog
-#### v0.2-a ([BETA](https://github.com/aflacc/ProjectFNF/blob/master/beta.md))
+#### v0.2-a (~~[BETA](https://github.com/aflacc/ProjectFNF/blob/master/beta.md)~~)
 - Added `die` function
 - Added a small bit of cutscene support
 - Improved the input system to be able to handle more notes
 - Fixed an issue with the freeplay menu causing a crash
 - Reverted the "hi" commit (don't ask)
-- Created the ProjectFNF Beta Program
+- ~~Created the ProjectFNF Beta Program~~
 - Made the Config file work
 - Added a Mod Title to the main menu
 - The mod version on the main menu uses the metadata instead of being hand-typed.
@@ -25,14 +25,14 @@ Interested in trying the beta? Click [here](https://github.com/aflacc/ProjectFNF
 - Dying now zooms the camera in towards the boyfriend
 - Screen shakes a little bit if you try and play a locked week
 #### v0.1-d
-- accidentally committed stuff for a seperate mod aaaaaaaaa
-- anything that has to do with neo stuff _does not belong  in the files!_
-- If anyone wants to go and make a pull request that removes all the neo stuff please let me know
+- ~~accidentally committed stuff for a seperate mod aaaaaaaaa~~
+- ~~anything that has to do with neo stuff _does not belong  in the files!_~~
+- ~~If anyone wants to go and make a pull request that removes all the neo stuff please let me know~~
 #### v0.1-c
 - Added a cutscene to South transitioning to Monster
-- Updated Senpai and Pixel Boyfriends sprites to close their mouths.
+- ~~Updated Senpai and Pixel Boyfriends sprites to close their mouths.~~
 - Fixed an issue with game crashing opening the debug menu
-- Thorns has seperate intro assets
+- ~~Thorns~~ has seperate intro assets
 - 
 
 ***
