@@ -48,11 +48,11 @@ class PlayState extends MusicBeatState
 {
 	var characterCol:Array<String> = CoolUtil.coolTextFile(Paths.txt('characterList'));
 	var col:Array<FlxColor> = [
-		0xFF51d8fb, // BF
-		0xFF51d8fb, // BETA-BF
-		0xFF9fe6ff, // BF-PIXEL
-		0xFF51d8fb, // BF-CHRISTMAS
-		0xFF51d8fb, // BF-CAR
+		0xFFffffff, // BF
+		0xFFffffff, // BETA-BF
+		0xFFffffff, // BF-PIXEL
+		0xFFffffff, // BF-CHRISTMAS
+		0xFFffffff, // BF-CAR
 		0xFFec7aac, // GF
 		0xFFec7aac, // GF-CHRISTMAS (Pretty sure this one doesn't really do anything.)
 		0xFF434141, // DAD
@@ -61,7 +61,7 @@ class PlayState extends MusicBeatState
 		0xFFfa95a9, // BETA-MOM
 		0xFFff0000, // PARENTS-CHRISTMAS
 		0xFFff98ff, // SPOOKY
-		0xFFff98ff, // BETA-SPOOKY
+		0xFF9898ff, // BETA-SPOOKY
 		0xFF3366ff, // PICO
 		0xFF3366ff, // BETA-PICO
 		0xFF000000, // MONSTER
