@@ -14,7 +14,7 @@ environment:
     secure: AYoRbFDfZVEdfVVzZFuz5wJXJkAEOOkHtgAweikYp3tqImQUhwg2P6dCjyPxEF7o
 
 install:
-  - rm -r /home/appveyor/site/
+  # rm -r /home/appveyor/site/
   - mkdir /home/appveyor/site/
   - git clone -q --branch=main https://github.com/Derpy-Jacob-903/projectfnfweb.git /home/appveyor/site
   - cd /home/appveyor/site
