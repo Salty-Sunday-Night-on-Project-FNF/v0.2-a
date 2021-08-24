@@ -2,6 +2,7 @@ version: 'PFNF v0.2-a / SSN 1.5 / indev{build}'
 branches:
   only:
   - main
+  - inujomp,
 skip_tags: true
 image: Ubuntu2004
 clone_folder: /home/appveyor/site
