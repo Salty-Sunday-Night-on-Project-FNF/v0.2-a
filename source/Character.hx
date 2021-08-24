@@ -177,6 +177,25 @@ class Character extends FlxSprite
 				addOffset("singDOWN", -50, -130);
 
 				playAnim('danceRight');
+			case 'spooky-beta':
+				tex = Paths.getSparrowAtlas('chara/spooky_kids_assets');
+				frames = tex;
+				animation.addByPrefix('singUP', 'spooky UP NOTE', 24, false);
+				animation.addByPrefix('singDOWN', 'spooky DOWN note', 24, false);
+				animation.addByPrefix('singLEFT', 'note sing left', 24, false);
+				animation.addByPrefix('singRIGHT', 'spooky sing right', 24, false);
+				animation.addByIndices('danceLeft', 'spooky dance idle', [0, 2, 6], "", 12, false);
+				animation.addByIndices('danceRight', 'spooky dance idle', [8, 10, 12, 14], "", 12, false);
+
+				addOffset('danceLeft');
+				addOffset('danceRight');
+
+				addOffset("singUP", -20, 26);
+				addOffset("singRIGHT", -130, -14);
+				addOffset("singLEFT", 130, -10);
+				addOffset("singDOWN", -50, -130);
+
+				playAnim('danceRight');
 			case 'mom':
 				tex = Paths.getSparrowAtlas('chara/Mom_Assets');
 				frames = tex;
@@ -216,6 +235,27 @@ class Character extends FlxSprite
 				addOffset("singDOWN", 20, -160);
 
 				playAnim('idle');
+			
+			case 'mom-beta-car':
+				tex = Paths.getSparrowAtlas('chara/betaMom');
+				frames = tex;
+
+				animation.addByPrefix('idle', "Mom Idle", 24, false);
+				animation.addByPrefix('singUP', "Mom Up Pose", 24, false);
+				animation.addByPrefix('singDOWN', "MOM DOWN POSE", 24, false);
+				animation.addByPrefix('singLEFT', 'Mom Left Pose', 24, false);
+				// ANIMATION IS CALLED MOM LEFT POSE BUT ITS FOR THE RIGHT
+				// CUZ DAVE IS DUMB!
+				animation.addByPrefix('singRIGHT', 'Mom Pose Left', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", 14, 71);
+				addOffset("singRIGHT", 10, -60);
+				addOffset("singLEFT", 250, -23);
+				addOffset("singDOWN", 20, -160);
+
+				playAnim('idle');
+				
 			case 'monster':
 				tex = Paths.getSparrowAtlas('chara/Monster_Assets');
 				frames = tex;
@@ -267,8 +307,8 @@ class Character extends FlxSprite
 					animation.addByPrefix('singRIGHTmiss', 'Pico NOTE LEFT miss', 24, false);
 					animation.addByPrefix('singLEFTmiss', 'Pico Note Right Miss', 24, false);
 				}
-			case 'pico':
-				tex = Paths.getSparrowAtlas('chara/Beta_Pico');
+			case 'pico-beta':
+				tex = Paths.getSparrowAtlas('chara/Beta_Connor');
 				frames = tex;
 				animation.addByPrefix('idle', "Pico Idle Dance", 24);
 				animation.addByPrefix('singUP', 'pico Up note0', 24, false);
@@ -323,7 +363,6 @@ class Character extends FlxSprite
 				animation.addByPrefix('firstDeath', "BF dies", 24, false);
 				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
 				animation.addByPrefix('deathConfirm', "BF Dead confirm", 24, false);
-				animation.addByPrefix('hit', "hit", 24, false);
 
 				animation.addByPrefix('scared', 'BF idle shaking', 24);
 
@@ -346,8 +385,8 @@ class Character extends FlxSprite
 				playAnim('idle');
 
 				flipX = true;
-			case 'bf':
-				var tex = Paths.getSparrowAtlas('BETA-BOYFRIEND');
+			case 'bf-beta':
+				var tex = Paths.getSparrowAtlas('BetaBoyfriend');
 				frames = tex;
 				animation.addByPrefix('idle', 'BF idle dance', 24, false);
 				animation.addByPrefix('singUP', 'BF NOTE UP0', 24, false);
@@ -554,6 +593,28 @@ class Character extends FlxSprite
 				playAnim('idle');
 
 				antialiasing = false;
+			
+			case 'spirit-beta':
+				frames = Paths.getPackerAtlas('chara/beta-spirit');
+				animation.addByPrefix('idle', "idle spirit_", 24, false);
+				animation.addByPrefix('singUP', "up_", 24, false);
+				animation.addByPrefix('singRIGHT', "right_", 24, false);
+				animation.addByPrefix('singLEFT', "left_", 24, false);
+				animation.addByPrefix('singDOWN', "spirit down_", 24, false);
+
+				addOffset('idle', -220, -280);
+				addOffset('singUP', -220, -240);
+				addOffset("singRIGHT", -220, -280);
+				addOffset("singLEFT", -200, -280);
+				addOffset("singDOWN", 170, 110);
+
+				setGraphicSize(Std.int(width * 6));
+				updateHitbox();
+
+				playAnim('idle');
+
+				antialiasing = false;
+
 
 			case 'parents-christmas':
 				frames = Paths.getSparrowAtlas('chara/mom_dad_christmas_assets');
@@ -702,6 +763,14 @@ class Character extends FlxSprite
 					}
 
 				case 'spooky':
+					danced = !danced;
+
+					if (danced)
+						playAnim('danceRight');
+					else
+						playAnim('danceLeft');
+					
+				case 'beta-spooky':
 					danced = !danced;
 
 					if (danced)
