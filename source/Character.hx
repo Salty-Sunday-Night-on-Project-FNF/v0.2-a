@@ -109,7 +109,7 @@ class Character extends FlxSprite
 				playAnim('danceRight');
 
 			case 'gf-limo':
-				tex = Paths.getSparrowAtlas('gfLimo'); // speakers are on sides and she sit on car
+				tex = Paths.getSparrowAtlas('chara/gfLimo'); // speakers are on sides and she sit on car
 				frames = tex;
 				animation.addByIndices('singUP', 'GF Dancing Beat Hair blowing CAR', [0], "", 24, false);
 				animation.addByIndices('danceLeft', 'GF Dancing Beat Hair blowing CAR', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
@@ -180,7 +180,7 @@ class Character extends FlxSprite
 
 				playAnim('danceRight');
 			case 'spooky-beta':
-				tex = Paths.getSparrowAtlas('chara/beta-spooky');
+				tex = Paths.getSparrowAtlas('chara/beta_spooky');
 				frames = tex;
 				animation.addByPrefix('singUP', 'spooky UP NOTE', 24, false);
 				animation.addByPrefix('singDOWN', 'spooky DOWN note', 24, false);
