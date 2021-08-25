@@ -66,7 +66,7 @@ class FreeplayState extends MusicBeatState
 			addWeek(['Bopeebo', 'Fresh', 'Dadbattle'], 1, ['dad']);
 
 		if (StoryMenuState.weekUnlocked[2] || isDebug)
-			addWeek(['Spookeez', 'South', 'Monster'], 2, ['spooky']);
+			addWeek(['Spookeez', 'South', 'Monster'], 2, ['spooky', 'spooky', 'monster-christmas']);
 
 		if (StoryMenuState.weekUnlocked[3] || isDebug)
 			addWeek(['Pico', 'Philly', 'Blammed'], 3, ['pico']);
@@ -81,10 +81,34 @@ class FreeplayState extends MusicBeatState
 			addWeek(['Senpai', 'Roses', 'Thorns'], 6, ['senpai', 'senpai-angry', 'spirit']);
 		
 		// if (StoryMenuState.weekUnlocked[7] || isDebug)
+			// addWeek(['Ugh', 'Guns', ''], 7, ['tankman']);
+		
+		if (StoryMenuState.weekUnlocked[1] || isDebug)
+			addWeek(['Best-Girl'], 1, ['gf']);
+		
+		if (StoryMenuState.weekUnlocked[2] || isDebug)
+			addWeek(['Daddys-Girl', 'Salty-Love', 'Daughter-Complex'], 1, ['dad', 'gf', 'dad']);
+
+		if (StoryMenuState.weekUnlocked[2] || isDebug)
+			addWeek(['Sweet-n-Spooky', 'Sour-n-Scary', 'Opheebop'], 2, ['spooky', 'spooky', 'monster-christmas']);
+
+		if (StoryMenuState.weekUnlocked[3] || isDebug)
+			addWeek(['Protect', 'Defend', 'Safeguard'], 3, ['pico']);
+
+		if (StoryMenuState.weekUnlocked[4] || isDebug)
+			addWeek(['Indie-Star', 'Rising-Star', 'Superstar'], 4, ['mom']);
+
+		if (StoryMenuState.weekUnlocked[5] || isDebug)
+			addWeek(['Order-Up', 'Rush-Hour', 'Freedom'], 5, ['parents-christmas', 'parents-christmas', 'monster-christmas']);
+
+		if (StoryMenuState.weekUnlocked[6] || isDebug)
+			addWeek(['Buckets', 'Logarithms', 'Terminal'], 6, ['senpai', 'senpai-angry', 'spirit']);
+		
+		// if (StoryMenuState.weekUnlocked[7] || isDebug)
 			// addWeek(['', '', ''], 7, ['tankman']);
 		
 		if (StoryMenuState.weekUnlocked[8] || isDebug)
-			addWeek(['Locked-On', 'Sights-on-You', 'Thorns'], 8, ['pico']);
+			addWeek(['Locked-On', 'Sights-on-You', 'Fanfire'], 8, ['pico']);
 
 		// LOAD CHARACTERS
 
