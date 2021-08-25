@@ -1,4 +1,4 @@
-version: 'v0.2-a / SSN 1.5 / {build}-inujomp,'
+version: 'v0.2-a / SSN 1.5 / 0.1.1.{build}'
 branches:
   only:
   - inujomp,
