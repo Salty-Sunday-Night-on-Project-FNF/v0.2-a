@@ -24,15 +24,15 @@ class StoryMenuState extends MusicBeatState
 
 	var weekData:Array<Dynamic> = [
 		// Songs that are in the weeks
-		['Tutorial'],
-		['Bopeebo', 'Fresh', 'Dadbattle'],
-		['Spookeez', 'South', "Monster"], // 'Spookeez'
-		['Pico', 'Philly', "Blammed"],
-		['Satin-Panties', "High", "Milf"],
-		['Cocoa', 'Eggnog', 'Winter-Horrorland'],
-		['Senpai', 'Roses', 'Thorns'],
-['','',''],
-['Locked-On','Sights-on-You','Fanfire']
+		['Best-Girl'],
+		['Daddys-Girl', 'Salty-Love', 'Daughter-Complex'],
+		['Sweet-n-Spooky', 'Sour-n-Scary', "Opheebop"], // 'Spookeez'
+		['Protect', 'Defend', "Safeguard"],
+		['Indie-Star', "Rising-Star", "Superstar"],
+		['Order-Up', 'Rush-Hour', 'Freedom'],
+		['Buckets', 'Logarithms', 'Terminal'],
+		['','',''],
+		['Locked-On','Sights-on-You','Fanfire']
 	];
 	var curDifficulty:Int = 1; // 0 = easy, 1 = normal, 2 = hard
 
@@ -60,8 +60,8 @@ class StoryMenuState extends MusicBeatState
 		"Mom's Love",
 		"Dinner Date",
 		"Glitch Out",
-"",
-"BETA CONNOR"
+		"",
+		"BETA CONNOR"
 	];
 
 	var txtWeekTitle:FlxText;
