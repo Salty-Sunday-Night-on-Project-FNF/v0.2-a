@@ -43,7 +43,7 @@ install:
   - haxelib git polymod https://github.com/larsiusprime/polymod.git
   - haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
   - haxelib list
-  - git clone $SRC_REPO /home/appveyor/src
+  # git clone $SRC_REPO /home/appveyor/src
 build_script:
   - cd /home/appveyor/src/source
   - mkdir /home/appveyor/src/source/ugh
