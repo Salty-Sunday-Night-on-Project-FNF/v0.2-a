@@ -58,16 +58,16 @@ build_script:
   - git config --global user.name "Derpy-Jacob-903"
   - cd /home/appveyor/src
   - haxelib run lime build html5
-  # cd /home/appveyor/site
-  # git rm -rf SSN/v02-a/
-  # cp -r /home/appveyor/src/export/release/html5/bin /home/appveyor/src/bin
-  # cd /home/appveyor/site
-  # mkdir SSN
-  # mkdir v02-a
-  # mv /home/appveyor/src/bin /home/appveyor/site/SSN/v02-a
-  # cd /home/appveyor/src/
-  # mv LICENSE /home/appveyor/site/SSN/v02-a/
-  # cd /home/appveyor/site
-  # git add --all
-  # git commit -m "SSN build through appveyor"
-  # git push
+  - cd /home/appveyor/site
+  - git rm -rf SSN/v02-a/
+  - cp -r /home/appveyor/src/export/release/html5/bin /home/appveyor/src/bin
+  - cd /home/appveyor/site
+  - mkdir SSN
+  - mkdir v02-a
+  - mv /home/appveyor/src/bin /home/appveyor/site/SSN/v02-a
+  - cd /home/appveyor/src/
+  - mv LICENSE /home/appveyor/site/SSN/v02-a/
+  - cd /home/appveyor/site
+  - git add --all
+  - git commit -m "SSN build through appveyor"
+  - git push
