@@ -29,7 +29,8 @@ install:
   - export PATH=$PATH:$HAXE_INSTALLDIR/haxe_20201231082044_5e33a78aa
   - mkdir $HAXELIB_ROOT && haxelib setup $HAXELIB_ROOT
   - haxelib install lime 7.9.0
-  - haxelib install openfl
+  # haxelib install openfl
+  - haxelib git openfl https://github.com/openfl/openfl
   - haxelib install flixel
   - haxelib run lime setup flixel
   - haxelib run lime setup
