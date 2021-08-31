@@ -168,6 +168,7 @@
 	<icon path="art/femboy_itsumi.png" size='16'/>/>
 	<icon path="art/icon32.png" size='32'/>
 	<icon path="art/icon64.png" size='64'/>
+	<icon path="art/favicon.png" size='192'/>
 	<icon path="art/iconOG.png" />
 
 	<!-- <haxedef name="SKIP_TO_PLAYSTATE" if="debug" /> -->
