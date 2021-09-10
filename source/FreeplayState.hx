@@ -86,8 +86,8 @@ class FreeplayState extends MusicBeatState
 		// if (StoryMenuState.weekUnlocked[7] || isDebug)
 			// addWeek(['Ugh', 'Guns', ''], 7, ['tankman']);
 		
-		if (StoryMenuState.weekUnlocked[1] || isDebug)
-			addWeek(['Best-Girl'], 1, ['gf']);
+		// if (StoryMenuState.weekUnlocked[1] || isDebug)
+			// addWeek(['Best-Girl'], 1, ['gf']);
 		
 		if (StoryMenuState.weekUnlocked[2] || isDebug)
 			addWeek(['Daddys-Girl', 'Salty-Love', 'Daughter-Complex'], 1, ['dad', 'gf', 'dad']);
