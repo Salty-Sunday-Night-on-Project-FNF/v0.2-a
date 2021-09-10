@@ -309,6 +309,24 @@ class Character extends FlxSprite
 					animation.addByPrefix('singRIGHTmiss', 'Pico NOTE LEFT miss', 24, false);
 					animation.addByPrefix('singLEFTmiss', 'Pico Note Right Miss', 24, false);
 				}
+
+				animation.addByPrefix('singUPmiss', 'pico Up note miss', 24);
+				animation.addByPrefix('singDOWNmiss', 'Pico Down Note MISS', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -29, 27);
+				addOffset("singRIGHT", -68, -7);
+				addOffset("singLEFT", 65, 9);
+				addOffset("singDOWN", 200, -70);
+				addOffset("singUPmiss", -19, 67);
+				addOffset("singRIGHTmiss", -60, 41);
+				addOffset("singLEFTmiss", 62, 64);
+				addOffset("singDOWNmiss", 210, -28);
+
+				playAnim('idle');
+
+				flipX = true;
+
 			case 'pico-beta':
 				tex = Paths.getSparrowAtlas('chara/Beta_Connor');
 				frames = tex;
@@ -596,13 +614,13 @@ class Character extends FlxSprite
 
 				antialiasing = false;
 			
-			case 'spirit-beta':
-				frames = Paths.getPackerAtlas('chara/beta-spirit');
-				animation.addByPrefix('idle', "idle spirit_", 24, false);
-				animation.addByPrefix('singUP', "up_", 24, false);
-				animation.addByPrefix('singRIGHT', "right_", 24, false);
-				animation.addByPrefix('singLEFT', "left_", 24, false);
-				animation.addByPrefix('singDOWN', "spirit down_", 24, false);
+			case 'spirit-new':
+				frames = Paths.getPackerAtlas('chara/spirit-new');
+				animation.addByPrefix('idle', "Angry Senpai Idle", 24, false);
+				animation.addByPrefix('singUP', "Angry Senpai UP NOTE", 24, false);
+				animation.addByPrefix('singRIGHT', "Angry Senpai RIGHT NOTE", 24, false);
+				animation.addByPrefix('singLEFT', "Angry Senpai LEFT NOTE", 24, false);
+				animation.addByPrefix('singDOWN', "Angry Senpai DOWN NOTE", 24, false);
 
 				addOffset('idle', -220, -280);
 				addOffset('singUP', -220, -240);
